@@ -20,7 +20,9 @@ long = args.long
 
 pokeapi.login(service, login_name, password, float(lat), float(long), 10)
 pokeapi.get_inventory()
-response = pokeapi.call()
+request = pokeapi.create_request()
+request.get_inventory()
+response = request.call()
 items = response['responses']['GET_INVENTORY']['inventory_delta']['inventory_items']
 
 print "nickname,species,attack_IV,defense_IV,stamina_IV,percent,cp"
