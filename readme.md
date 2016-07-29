@@ -6,8 +6,8 @@ What are IVs? [Reference](http://gaming.stackexchange.com/questions/276692/in-po
 
 # Installation
 * Install python
-* pip install 
-git+https://github.com/tejado/pgoapi.git
+* pip install git+https://github.com/tejado/pgoapi.git
 
 #Usage
-`python getPokeStats.py login_name password service{ptc or google}`
+* `python getPokeStats.py login_name password service{ptc or google} > pokestats.csv`
+* Open results in Excel
